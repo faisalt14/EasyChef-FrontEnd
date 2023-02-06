@@ -16,7 +16,20 @@
         <a href="#" class="navbar-brand"> Easy Chef</a>
 
         <div class="collapse navbar-collapse">
+          
+          <!-- The Following Code for the <form> tag was taken from: 
+             https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_form&stacked=h 
+            
+             and slightly modifed to create a search bar for the navigation bar. 
+            -->
+          <form class="navbar-form">
+            <div class="form-group">
+              <input style="width: 20rem; margin-left: 1rem;" type="text" class="form-control" placeholder="Search for recipes ...">
+            </div>
+          </form>
+
             <ul class="navbar-nav  ms-auto">
+              
               <li class="nav-item">
                   <a class="nav-link btn" href="my_recipes.html" style="background-color: #E47E20; color: white; margin-left: 1rem;" >My Recipes</a>
               </li>
@@ -24,6 +37,7 @@
                   <a class="nav-link btn" href="create_recipe.html" style="background-color: #E47E20; color: white; margin-left: 1rem;"> Create New Recipe</a>
               </li>
             </ul>
+
 
 
         </div>
