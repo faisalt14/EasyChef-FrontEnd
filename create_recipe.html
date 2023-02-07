@@ -5,6 +5,392 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Easy Chef</title>
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="create_recipe.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">	
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
   </head>
-  <body></body>
+  <body>
+    <div class="page">
+      <div class="header-1 container">
+        Create a Recipe
+      </div>  
+      <div class="form-layout">
+        <!-- form start -->
+        <form class="recipe-form">
+          <!-- first part of the form -->
+          <div class="container-fluid ms-5 mt-4">
+            <div class="row">
+              <!-- left side of the top half of the form -->
+              <div class="form1 col-lg-6 col-sm-8 border border-dark">
+
+                <div class="recipe1 form-group row">
+                  <div class="input-group mb-3">
+                    <div class="recipe-name d-flex align-items-center mt-4" style="width: 500rem; height: 20px;">
+                      <label id="recipe-name" class="col-form-label">Recipe Name</label>
+                      <div class="col">
+                        <input type="text" class="form-control" id="recipe-name-input" placeholder=""/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="recipe1.1 form-group row">
+                  <label id="recipe1.1-name" class="col-form-label">Select Filters</label>
+
+                  <div class="input-group mb-3">
+                    <select class="select1 form-select me-2" aria-label="Default select example">
+                      <option value="" disabled selected hidden>Difficulty</option>
+                      <option value="Easy">Easy</option>
+                      <option value="Medium">Medium</option>
+                      <option value="Hard">Hard</option>
+                    </select>
+  
+                    <select class="select2 form-select me-2" aria-label="Default select example">
+                      <option value="" disabled selected hidden>Cuisine</option>
+                      <option value="Caribbean">Caribbean</option>
+                      <option value="Vietnamese">Vietnamese</option>
+                      <option value="Korean">Korean</option>
+                      <option value="German">German</option>
+                      <option value="Indian">Indian</option>
+                      <option value="Soul food">Soul food</option>
+                    </select>                  
+                    
+                    <select class="select3 form-select me-2" aria-label="Default select example">
+                      <option value="" disabled selected hidden>Meal</option>
+                      <option value="Caribbean">Breakfast</option>
+                      <option value="Vietnamese">Brunch</option>
+                      <option value="Korean">Lunch</option>
+                      <option value="German">Dinner</option>
+                      <option value="Indian">Dessert</option>
+                    </select>   
+  
+                    <select class="select4 form-select" aria-label="Default select example">
+                      <option value="" disabled selected hidden>Diet</option>
+                      <option value="Vegetarian">Vegetarian</option>
+                      <option value="Vegan">Vegan</option>
+                      <option value="Gluten-free">Gluten-free</option>
+                      <option value="Pescatarian">Pescatarian</option>
+                      <option value="Kosher">Kosher</option>
+                      <option value="Halal">Halal</option>
+                    </select>
+
+                  </div>
+
+                  </div>
+
+
+                  <div class="recipe1.2 form-group row">
+                    <div class="input-group mb-5" style="width: 38rem; height: 20px;">
+                     <label id="recipe1.2-name" class="col-form-label">Prep time</label>
+                    <select class="select5 form-select" aria-label="Default select example">
+                      <option value="0" selected="">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="4">3</option>
+                      <option value="3">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select> 
+                    <label class="input-group-text me-3">hr</label>
+
+
+                    <select class="select6 form-select" aria-label="Default select example">
+                      <option value="0" selected="">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="4">3</option>
+                      <option value="3">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                    <label class="input-group-text">mins</label>
+
+                    </div>  
+                    
+                  </div>
+
+                  
+                  <div class="recipe1.3 form-group row">
+                    <div class="input-group mb-5" style="width: 38rem; height: 10x;">
+                      <label id="recipe1.3-name" class="col-form-label">Cooking time</label>
+                      <select class="select7 form-select" aria-label="Default select example">
+                        <option value="0" selected="">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="4">3</option>
+                        <option value="3">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select> 
+                      <label class="input-group-text me-3">hr</label>
+
+
+                      <select class="select8 form-select" aria-label="Default select example">
+                        <option value="0" selected="">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="4">3</option>
+                        <option value="3">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                      <label class="input-group-text">mins</label>
+                    </div>  
+                    
+                  </div>
+
+                  <div class="recipe1.4 form-group row" style="width: rem; height: 50px;">
+                    <div class="input-group mb-3">
+                      <label id="recipe1.4-name" class="col-form-label me-3">Number of Servings</label>
+                      <input type="number" id="typeNumber" class="form-control" style="width: 50px" min="1">
+                    </div>
+                  </div>
+                </div>
+
+              <!-- right side of the top half of the form -->
+              <div class="form2 d-flex col-lg-5 col-sm-4 ms-5 border border-dark justify-content-center">
+                <div class="form2 row border border-dark ms-4 me-4 mt-3 ps-4 justify-content-center">
+                  <div class="col">
+                    <h3 style="text-align: center">Upload images or videos</h3>
+                    <!-- code reference for putting file uplaod behind icon:
+                    https://stackoverflow.com/questions/2855589/replace-input-type-file-by-an-image -->
+                    <div class="image-upload mb-4 pb-4" style="height: 300px;">
+                      <label class="image-icon-click" for="file-input">
+                        <i class="bi bi-images" style="pointer-events: none"></i>
+                      </label>
+                      <input id="file-input" type="file" />
+                    </div>
+                  </div>
+                <div class="image-rows row">
+                  <div class="columns1 col"></div>
+                  <div class="columns1 col"></div>
+                  <div class="columns1 col"></div>
+                  <div class="columns1 col d-flex justify-content-center align-items-center position-relative" style="max-height: 80px;">
+                    <i class="bi bi-plus-circle mt-5 position-relative" style="font-size: 40px; color: #656767;"></i>
+                  </div>
+                </div>
+                </div>
+
+              </div>
+
+              </div>
+              <div class="row mt-4">
+                <div class="col-lg-6 col-sm-4">
+                <h3>List Of Ingredients</h3>
+                <div class="form2 d-flex row border border-dark align-items-center">
+                  <div class="mt-3 mb-4 pt-1 pb-3 border border-dark">
+                    <div class="row d-flex justify-content-between">
+                      <div class="col-8 d-flex align-items-center">
+                        <ul>
+                          <li style="font-size:17px; position: absolute;">Tomato</li>
+                        </ul>
+                      </div>
+                      <div class="col-4 d-flex align-items-center justify-content-end">
+                        <p class="mr-3 pe-3 my-auto">qty.</p>
+                        <button type="button" class="btn" style="background-color: #E47E20; color: white;">Remove</button>
+                      </div>
+                    </div>            
+                    
+                    <div class="row d-flex justify-content-between mt-1">
+                      <div class="col-8 d-flex align-items-center">
+                        <ul>
+                          <li style="font-size:17px; position: absolute;">Garlic</li>
+                        </ul>
+                      </div>
+                      <div class="col-4 d-flex align-items-center justify-content-end">
+                        <p class="mr-3 pe-3 my-auto">qty.</p>
+                        <button type="button" class="btn" style="background-color: #E47E20; color: white;">Remove</button>
+                      </div>
+                    </div>  
+                  
+                  <div class="row d-flex justify-content-between mt-1">
+                    <div class="col-8 d-flex align-items-center">
+                      <ul>
+                        <li style="font-size:17px; position: absolute;">Milk</li>
+                      </ul>                    </div>
+                    <div class="col-4 d-flex align-items-center justify-content-end">
+                      <p class="mr-3 pe-3 my-auto">qty.</p>
+                      <button type="button" class="btn" style="background-color: #E47E20; color: white;">Remove</button>
+                    </div>
+                  </div> 
+                  <div class="row d-flex justify-content-between mt-1">
+                    <div class="col-8 d-flex align-items-center">
+                      <ul>
+                        <li style="font-size:17px; position: absolute;">Cheese</li>
+                      </ul>                    </div>
+                    <div class="col-4 d-flex align-items-center justify-content-end">
+                      <p class="mr-3 pe-3 my-auto">qty.</p>
+                      <button type="button" class="btn" style="background-color: #E47E20; color: white;">Remove</button>
+                    </div>
+                  </div> 
+                </div>
+                <div class="add-new-ingredient row d-flex justify-content-between">
+                  <div class="d-flex input-group mb-3">
+                      <label class="col-form-label" style="margin-top:7px; margin-right: 0; display: inline-block;">New Ingredient</label>
+                      <input type="text" id="typeNumber" class="form-control ps-1" style="margin-left: 0; width:100px;"> 
+                      <label class="col-form-label" style="margin-top:7px; margin-left:30px; display: inline-block; width:20px;">Qty.</label>
+                      <input type="number" id="typeNumber" class="form-control" min="1" style="margin-left:10px; margin-right: 20px;">
+                      <select class="form-select" aria-label="Default select example" style="margin-right: 10px;">
+                        <option value="" disabled selected hidden></option>
+                        <option value="Tbsp">Tbsp.</option>
+                        <option value="Tsp">Tsp.</option>
+                        <option value="Grams">Grams</option>
+                      </select>
+                      <button type="button" class="btn" style="background-color: #04B4B4; color: white; width: px;">Add</button>
+                  </div>
+                
+                </div>   
+                             
+                
+                </div>
+
+                </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-lg-7 col-sm-4">
+                    <h4>Step 1</h4>
+                    <div class="form2 d-flex row border border-dark align-items-center">
+                      <div class="row d-flex justify-content-between mt-3">
+                        <div class="col-8 d-flex align-items-center">
+                          <ol>
+                            <li style="font-size:17px; position: absolute;">Pre heat oven to 450°f</li>
+                          </ol>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-end">
+                          <button type="button" class="btn" style="background-color: #E47E20; color: white;">Remove</button>
+                        </div>
+                        </div>
+                      
+                        <div class="row d-flex justify-content-between mt-1">
+                          <div class="col-8 d-flex align-items-center">
+                            <ol start="2">
+                              <li style="font-size:17px; position: absolute;">Slice tomatoes and stir in a pan</li>
+                            </ol>
+                          </div>
+                          <div class="col-4 d-flex align-items-center justify-content-end">
+                            <button type="button" class="btn" style="background-color: #E47E20; color: white;">Remove</button>
+                          </div>      
+                        </div>
+                        <div class="row d-flex justify-content-between mt-1">
+                          <div class="col-8 d-flex align-items-center">
+                            <ol start="3">
+                              <li style="font-size:17px; position: absolute;">Add a pinch of salt</li>
+                            </ol>
+                          </div>
+                          <div class="col-4 d-flex align-items-center justify-content-end">
+                            <button type="button" class="btn" style="background-color: #E47E20; color: white;">Remove</button>
+                          </div>
+                      </div>
+
+                      
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="col-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="textAreaExample2" style="font-size: 22px">New Step</label>
+                        <textarea class="form-control" id="textAreaExample2" rows="8"></textarea>
+                      </div>                      
+
+                    </div>
+                    <div class="col-6 mt-4">
+                      <div class="input-group mt-4 mb-5 d-flex" style="width: 34rem; height: 20px;">
+                        <label id="recipe1.3-name" class="col-form-label">Cooking time</label>
+                        <select class="select7 form-select"aria-label="Default select example">
+                          <option value="0" selected="">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="4">3</option>
+                          <option value="3">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select> 
+                        <label class="input-group-text me-3">hr</label>
+  
+  
+                        <select class="select8 form-select" aria-label="Default select example">
+                          <option value="0" selected="">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="4">3</option>
+                          <option value="3">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select>
+                        <label class="input-group-text me-3">mins</label>
+                      </div>  
+
+                      <div class="input-group mb-3 d-flex" style="width: 34rem; height: 20px;">
+                        <label id="recipe1.3-name" class="col-form-label">Prep time</label>
+                        <select class="select7 form-select" aria-label="Default select example">
+                          <option value="0" selected="">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="4">3</option>
+                          <option value="3">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select> 
+                        <label class="input-group-text me-3">hr</label>
+  
+  
+                        <select class="select8 form-select" aria-label="Default select example">
+                          <option value="0" selected="">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="4">3</option>
+                          <option value="3">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select>
+                        <label class="input-group-text me-3">mins</label>
+                      </div>  
+
+                      <div class="container">
+                        <p>Upload an image or a video</p>
+                        <!-- code reference for putting file uplaod behind icon:
+                        https://stackoverflow.com/questions/2855589/replace-input-type-file-by-an-image -->
+                        <div class="image-upload2 mb-4 pb-4" style="width: 40px; height: 60px;">
+                          <label class="image-icon-click" for="file-input">
+                            <i class="bi bi-images" style="pointer-events: none"></i>
+                          </label>
+                          <input id="file-input" type="file" />
+                        </div>
+
+                      </div>
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="button-contain container mb-4 mt-4">
+                  <button type="submit" class="btn btn-block center-btn" style="background-color: #e47e20; color: white; font-size: 20px;">Post to Easy Chef!</button>
+                </div>
+              </div>
+
+
+          <!-- form end -->
+        </form>
+      </div>
+    </div>
+    <!-- bootstrap cdn link  -->
+
+  </body>
 </html>
