@@ -1,11 +1,13 @@
 html, .form-layout {
-  margin: 0;
+  margin: 0 auto;
   width: 100vw;
-  height: 100vh;}
+  height: 100vh;
+  background-color: #EFEEEE;
+
+}
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #efeeee;
   margin: 0;
   width: 100vw;
   height: 100vh;
@@ -54,7 +56,7 @@ body {
   color: white;
 }
 
-/* code reference for putting file uplaod behind icon:
+/* code reference for putting file upload behind icon:
 https://stackoverflow.com/questions/2855589/replace-input-type-file-by-an-image  */
 
 .image {
@@ -87,7 +89,7 @@ https://stackoverflow.com/questions/2855589/replace-input-type-file-by-an-image 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.image-upload > input {
+.image-upload > input, .image-upload2 > input {
   visibility:hidden;
   width:0;
   height:0
@@ -124,4 +126,13 @@ https://stackoverflow.com/questions/2855589/replace-input-type-file-by-an-image 
   height: 50px;
   font-size: 20px;
 
+}
+
+select option {
+  background: white;
+  color: black;
+}
+
+[class*="col-"] {
+  padding: 1rem;;
 }
