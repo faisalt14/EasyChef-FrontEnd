@@ -3,9 +3,12 @@
   <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">	
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -63,12 +66,18 @@
 
     <div class="bg-image" style="background-image: url('https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size:100%; height:60vh; background-repeat:no-repeat; filter:blur(4px) brightness(0.75); position:relative; margin-bottom:50px;"></div>
     <form>
-      <h1 style="text-align: center; padding:50px; position:absolute; top:30%; left:50%; transform:translate(-50%, -50%); color:white; font-size:4em; width:100%;">Search for Recipes</h1>
-      <div class="searchBar" style="display:flex; position:absolute; top:40%; left:50%; transform:translate(-50%, -50%); font-size:1.5em;">
-        
+      <h1 style="text-align: center; padding:50px; position:absolute; top:30%; left:50%; transform:translate(-50%, -50%); color:white; font-size:3.5vw; width:100%;">Search for Recipes</h1>
+      
+      <div class="searchBar" style="display:flex; position:absolute; top:40%; left:50%; transform:translate(-50%, -50%); font-size:1.5em; z-index:2;">
+        <input type="text" id="search" name="search" style="width:40vw; font-size:1.25vw; height:2.5vw"></textarea>
+        <input type="submit" value="Search" style="width:10vw; font-size:1.25vw; height:2.5vw; color:white; background-color:#04B4B4; border-radius:5px; border: 0px">
+      </div>
+      
+      <div style="display:flex; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:1;">
+
         <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle" type="button" id="searchCategoryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:10vw; font-size:0.8em; background-color:#04B4B4; border:0px; border-radius: 5px;">
-            Category
+          <button type="button" id="searchCategoryDropdown" class="btn btn-primary dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
+            Search By...
           </button>
           <ul class="dropdown-menu" aria-labelledby="searchCategoryDropdown">
             <li><a class="dropdown-item">Recipe</a></li>
@@ -77,14 +86,8 @@
           </ul>
         </div>
 
-        <input type="text" id="search" name="search" style="width:40vw"></textarea>
-        <input type="submit" value="Search" style="width:10vw; color:white; background-color:#04B4B4; border-radius:5px; border: 0px">
-      </div>
-      
-      <div style="display:flex; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);">
-
         <div class="dropdown">
-          <button type="button" id="cookingTimeDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:3em; margin-right:3em; width:10vw; font-size:1.25em; background-color:#04B4B4; border:0px">
+          <button type="button" id="cookingTimeDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
             Cooking Time
           </button>
           <div class="dropdown-menu" aria-labelledby="cookingTimeDropdown" style="overflow-y:scroll; max-height:10em;">
@@ -96,7 +99,7 @@
         </div>
 
         <div class="dropdown">
-          <button type="button" id="cuisineDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:3em; margin-right:3em; width:10vw; font-size:1.25em; background-color:#04B4B4; border:0px">
+          <button type="button" id="cuisineDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
             Cuisine
           </button>
           <div class="dropdown-menu" aria-labelledby="cuisineDropdown" style="overflow-y:scroll; max-height:10em;">
@@ -121,7 +124,7 @@
         </div>
 
         <div class="dropdown">
-          <button type="button" id="mealDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:3em; margin-right:3em; width:10vw; font-size:1.25em; background-color:#04B4B4; border:0px">
+          <button type="button" id="mealDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
             Meal
           </button>
           <div class="dropdown-menu" aria-labelledby="mealDropdown" style="overflow-y:scroll; max-height:10em;">
@@ -135,7 +138,7 @@
         </div>
 
         <div class="dropdown">
-          <button type="button" id="dietDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:3em; margin-right:3em; width:10vw; font-size:1.25em; background-color:#04B4B4; border:0px">
+          <button type="button" id="dietDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
             Diet
           </button>
           <div class="dropdown-menu" aria-labelledby="dietDropdown" style="overflow-y:scroll; max-height:10em;">
@@ -143,6 +146,7 @@
             <a class="dropdown-item">Vegetarian</a>
             <a class="dropdown-item">Gluten-Free</a>
             <a class="dropdown-item">Halal</a>
+            <a class="dropdown-item">Kosher</a>
           </div>
         </div>
 
@@ -154,230 +158,373 @@
 
       <h1 style="text-align: center; margin: 10px;"><b>Your results</b></h1>
 
-      <div class="searchCardBox" style="padding:20px; display:grid; row-gap: 30px; grid-template-columns:1fr 1fr 1fr 1fr; grid-template-rows:auto auto; min-width:30rem; overflow-x:scroll;">
+      <div class="container-fluid" style="padding:20px; min-width:30rem;">
 
-        <div class="card" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; filter:drop-shadow(0px 8px 8px #000000);">
-          <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
-          <div style="position:absolute;top:65%;display:flex; width:100%">
-            <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
-            <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
-            <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
-            <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+        <div class="row">
+
+          <div class="col">
+            
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+              </div>
+              <div class="card-body">
+                <div style="display:flex;">
+                <div style="flex:0.75">
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>				
+                
+                <div style="flex:0.25">
+                  <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
+              </div>
+              </div>
           </div>
-          <div class="card-body">
-            <div style="display:flex;">
-              <div style="flex:0.75">
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>				
-              
-              <div style="flex:0.25">
-                <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+
+          <div class="col">
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+              </div>
+              <div class="card-body">
+                <div style="display:flex;">
+                <div style="flex:0.75">
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>				
+                
+                <div style="flex:0.25">
+                  <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
+              </div>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+              </div>
+              <div class="card-body">
+                <div style="display:flex;">
+                  <div style="flex:0.75">
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>				
+                
+                  <div style="flex:0.25">
+                    <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                  </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
               </div>
             </div>
-            
-            <h4 class="card-title">Quick Fudge Brownies</h4>
-            <i>John Doe</i>
           </div>
-        </div>
 
-        <div class="card" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; filter:drop-shadow(0px 8px 8px #000000);">
-          <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
-          <div style="position:absolute;top:65%;display:flex; width:100%">
-            <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
-            <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
-            <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
-            <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
-          </div>
-          <div class="card-body">
-            <div style="display:flex;">
-              <div style="flex:0.75">
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>				
-              
-              <div style="flex:0.25">
-                <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+          <div class="col">
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+              </div>
+              <div class="card-body">
+                <div style="display:flex;">
+                  <div style="flex:0.75">
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>				
+                
+                  <div style="flex:0.25">
+                    <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                  </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
               </div>
             </div>
-            
-            <h4 class="card-title">Quick Fudge Brownies</h4>
-            <i>John Doe</i>
           </div>
-        </div>
+
+          <div class="col">
+            
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+              </div>
+              <div class="card-body">
+                <div style="display:flex;">
+                <div style="flex:0.75">
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>				
+                
+                <div style="flex:0.25">
+                  <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
+              </div>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+              </div>
+              <div class="card-body">
+                <div style="display:flex;">
+                <div style="flex:0.75">
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>				
+                
+                <div style="flex:0.25">
+                  <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
+              </div>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+              </div>
+              <div class="card-body">
+                <div style="display:flex;">
+                  <div style="flex:0.75">
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>				
+                
+                  <div style="flex:0.25">
+                    <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                  </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+              </div>
+              <div class="card-body">
+                <div style="display:flex;">
+                  <div style="flex:0.75">
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>				
+                
+                  <div style="flex:0.25">
+                    <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                  </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
+              </div>
+            </div>
+          </div>
         
-        <div class="card" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; filter:drop-shadow(0px 8px 8px #000000);">
-          <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
-          <div style="position:absolute;top:65%;display:flex; width:100%">
-            <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
-            <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
-            <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
-            <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
-          </div>
-          <div class="card-body">
-            <div style="display:flex;">
-              <div style="flex:0.75">
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>				
-              
-              <div style="flex:0.25">
-                <i class="bi bi-stopwatch"></i> <b>2.5h</b>
-              </div>
-            </div>
+          <div class="col">
             
-            <h4 class="card-title">Quick Fudge Brownies</h4>
-            <i>John Doe</i>
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+              </div>
+              <div class="card-body">
+                <div style="display:flex;">
+                <div style="flex:0.75">
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>				
+                
+                <div style="flex:0.25">
+                  <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
+              </div>
+              </div>
           </div>
-        </div>
 
-        <div class="card" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; filter:drop-shadow(0px 8px 8px #000000);">
-          <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
-          <div style="position:absolute;top:65%;display:flex; width:100%">
-            <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
-            <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
-            <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
-            <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
-          </div>
-          <div class="card-body">
-            <div style="display:flex;">
-              <div style="flex:0.75">
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>				
-              
-              <div style="flex:0.25">
-                <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+          <div class="col">
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
               </div>
-            </div>
-            
-            <h4 class="card-title">Quick Fudge Brownies</h4>
-            <i>John Doe</i>
+              <div class="card-body">
+                <div style="display:flex;">
+                <div style="flex:0.75">
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>				
+                
+                <div style="flex:0.25">
+                  <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
+              </div>
+              </div>
           </div>
-        </div>
 
-        <div class="card" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; filter:drop-shadow(0px 8px 8px #000000);">
-          <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
-          <div style="position:absolute;top:65%;display:flex; width:100%">
-            <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
-            <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
-            <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
-            <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
-          </div>
-          <div class="card-body">
-            <div style="display:flex;">
-              <div style="flex:0.75">
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>				
-              
-              <div style="flex:0.25">
-                <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+          <div class="col">
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+              </div>
+              <div class="card-body">
+                <div style="display:flex;">
+                  <div style="flex:0.75">
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>				
+                
+                  <div style="flex:0.25">
+                    <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                  </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
               </div>
             </div>
-            
-            <h4 class="card-title">Quick Fudge Brownies</h4>
-            <i>John Doe</i>
           </div>
-        </div>
 
-        <div class="card" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; filter:drop-shadow(0px 8px 8px #000000);">
-          <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
-          <div style="position:absolute;top:65%;display:flex; width:100%">
-            <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
-            <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
-            <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
-            <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
-          </div>
-          <div class="card-body">
-            <div style="display:flex;">
-              <div style="flex:0.75">
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>				
-              
-              <div style="flex:0.25">
-                <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+          <div class="col">
+            <div class="card mb-4" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
+              <div style="position:absolute;top:65%;display:flex; width:100%">
+                <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
+                <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
+                <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
+                <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
+              </div>
+              <div class="card-body">
+                <div style="display:flex;">
+                  <div style="flex:0.75">
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20;"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>				
+                
+                  <div style="flex:0.25">
+                    <i class="bi bi-stopwatch"></i> <b>2.5h</b>
+                  </div>
+                </div>
+                
+                <h4 class="card-title">Quick Fudge Brownies</h4>
+                <i>John Doe</i>
               </div>
             </div>
-            
-            <h4 class="card-title">Quick Fudge Brownies</h4>
-            <i>John Doe</i>
           </div>
-        </div>
 
-        <div class="card" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; filter:drop-shadow(0px 8px 8px #000000);">
-          <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
-          <div style="position:absolute;top:65%;display:flex; width:100%">
-            <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
-            <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
-            <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
-            <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
-          </div>
-          <div class="card-body">
-            <div style="display:flex;">
-              <div style="flex:0.75">
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>				
-              
-              <div style="flex:0.25">
-                <i class="bi bi-stopwatch"></i> <b>2.5h</b>
-              </div>
-            </div>
-            
-            <h4 class="card-title">Quick Fudge Brownies</h4>
-            <i>John Doe</i>
-          </div>
-        </div>
-        
-        <div class="card" onclick="window.location.href = '#'" style="width: 25rem; height: 25rem; cursor:pointer; filter:drop-shadow(0px 8px 8px #000000);">
-          <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 18rem; object-fit: cover; position: relative;">
-          <div style="position:absolute;top:65%;display:flex; width:100%">
-            <h5 title="Easy" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#0DE7E7; text-align:center; flex:0.25;"> Easy </h5>
-            <h5 title="American" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">American</h5>
-            <h5 title="Snack" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Snack</h5>
-            <h5 title="Gluten-Free" style="width:100%; border:2px solid Black; border-radius:15px; background-color:#E47E20; text-align:center; flex:0.25;color:white;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;">Gluten-Free</h5>
-          </div>
-          <div class="card-body">
-            <div style="display:flex;">
-              <div style="flex:0.75">
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill" style="color: #E47E20;"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>				
-              
-              <div style="flex:0.25">
-                <i class="bi bi-stopwatch"></i> <b>2.5h</b>
-              </div>
-            </div>
-            
-            <h4 class="card-title">Quick Fudge Brownies</h4>
-            <i>John Doe</i>
-          </div>
         </div>
 
       </div>
