@@ -71,35 +71,53 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row text-center">
 
         <form style="max-width:80%; margin-left:10%;">
-          <div style="position:relative; margin-top:50px; margin-left:calc(50% - 100px)">
+          <div style="position:relative; margin-top:50px;">
             <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Profile Picture" style="border-radius:50%; width:200px;">
-            <div style="background-color:#E47E20; border-radius:50%; width:3em; cursor:pointer; position:absolute; bottom:0px; left:160px; ">
+            <div style="background-color:#E47E20; border-radius:50%; width:3em; cursor:pointer; position:absolute; bottom:0px; left:41.5vw ">
               <i class="bi bi-pencil-square" style="color:#EFEEEE; font-size:xx-large; margin-left:0.25em"></i>
             </div>
           </div>
 
-          <div class="container-fluid" style="margin-top: 50px;">
+          <div class="container-fluid" style="margin-top: 50px; max-width:800px;">
             
-            <div class="row text-center">
+            <div class="row">
 
               <div class="col mb-5">
-                <label for="editName" style="font-size:x-large">Name</label>
+                <label for="editFirstName" style="font-size:x-large; text-align:left;">First Name</label>
                 <br>
-                <input type="text" id="editName" name="editName" style="width:60%; min-width: 300px; font-size:1.5em;"> </divinput>
+                <input type="text" id="editFirstName" name="editFirstName" style="width:60%; min-width: 300px; font-size:1.5em;"> </divinput>
               </div>
 
               <div class="col mb-5">
-                <label for="editEmail" style="font-size:x-large">Email</label>
+                <label for="editLastName" style="font-size:x-large">Last Name</label>
                 <br>
-                <input type="email" id="editEmail" name="editEmail" style="width:60%; min-width: 300px; font-size:1.5em;"> </divinput>
+                <input type="text" id="editLastName" name="editLastName" style="width:60%; min-width: 300px; font-size:1.5em;"> </divinput>
               </div>
 
             </div>
 
-            <div class="row mb-5 text-center">
+            <div class="row">
+
+              <div class="col mb-5">
+                <label for="editEmail" style="font-size:x-large; display:inline-block">Email</label>
+                <br>
+                <input type="email" id="editEmail" name="editEmail" style="width:90%; min-width: 300px; font-size:1.5em;"> </divinput>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col mb-5">
+                <label for="editPhoneNumber" style="font-size:x-large">Phone Number</label>
+                <br>
+                <input type="tel" id="editPhoneNumber" name="editPhoneNumber" style="width:90%; min-width: 300px; font-size:1.5em;"> </divinput>
+              </div>
+            </div>
+
+            <div class="row mb-5">
 
               <div class="col mb-5">
                 <label for="editPassword" style="font-size:x-large">Password</label>
@@ -117,11 +135,11 @@
 
             <div class="row">
               
-              <div class="col mb-5">
-                <input type="submit" value="Save Changes" style="width:8em; font-size:1.5em; height:2em; color:white; background-color:#04B4B4; border-radius:5px; border: 0px; margin-left:calc(50% - 100px)">
+              <div class="col mb-5 mx-5">
+                <input type="submit" value="Save Changes" style="width:8em; font-size:1.5em; height:2em; color:white; background-color:#04B4B4; border-radius:5px; border: 0px;">
               </div>
-              <div class="col mb-5">
-                <button type="button" style="width:8em; font-size:1.5em; height:2em; background-color:#D9D9D9; border-radius:5px; border: 0px; margin-left:calc(50% - 100px)">
+              <div class="col mb-5 mx-5">
+                <button type="button" style="width:8em; font-size:1.5em; height:2em; background-color:#D9D9D9; border-radius:5px; border: 0px;">
                   Cancel
                 </button>
               </div>
