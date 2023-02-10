@@ -84,15 +84,15 @@
           <div class="tab-pane active" id="published">
             <div class="container">
               <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
+                  <div class="card" onclick="window.location.href = '#'" style="min-width: 19rem; width: 20rem; height: 20rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
                     <div class="d-flex" style="position: relative;">
                       <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
                       <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
-                        <h5><span class="ms-2 badge" style="background-color: #0DE7E7; color: black; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
+                        <h5><span class="ms-2 badge d-flex" style="background-color: #0DE7E7; color: black; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
+                        <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
+                        <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
+                        <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
                       </div>
     
                     </div>
@@ -117,317 +117,357 @@
                         <div class="col-6 d-flex">
                           <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
                         </div>
-                        <div class="col-1 d-flex">
+                        <!-- <div class="col-1 d-flex">
                           <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px;">Edit</button>
                           <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px;">Delete</button>
-                        </div>
+                        </div> -->
                       </div>
+                      <diw class="row">
+                        <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 4rem;">Edit</button>
+                        <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 5rem;">Delete</button>
+
+                      </diw>
                   
                     </div>
                     
                 </div>
                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
-                    <div class="d-flex" style="position: relative;">
-                      <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
-                      <div style="position: absolute; bottom: 0; display: flex; align-items: flex-end;">
-                        <h5><span class="ms-2 badge d-inline-block" style="background-color: #0DE7E7; color: black; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
-                        <h5><span class="ms-2 badge d-inline-block" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
-                        <h5><span class="ms-2 badge d-inline-block" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
-                        <h5><span class="ms-2 badge d-inline-block" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
-                      </div>
-    
+               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
+                <div class="card" onclick="window.location.href = '#'" style="min-width: 19rem; width: 20rem; height: 20rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+                  <div class="d-flex" style="position: relative;">
+                    <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
+                    <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
+                      <h5><span class="ms-2 badge d-flex" style="background-color: #0DE7E7; color: black; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
+                      <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
+                      <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
+                      <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
                     </div>
-                  
+  
+                  </div>
                 
-                    <div class="card-body" style="margin-top: -20px;">
-                      <div class="mt-2" style="display:flex;">
-                      <div style="flex:0.75">
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
-                      </div>
-                        
-                        <div style="flex:0.25;" >
-                          <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
-                        </div>
-                      </div>
-                      <h6 class="card-title">Quick Fudge Brownies</h6>
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 d-flex">
-                          <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
-                        </div>
-                        <div class="col-lg-1 col-md-1 col-sm-12 d-flex">
-                          <button type="button" class="btn d-flex" style="background-color:#04B4B4; color: white; font-size: 15px;">Edit</button>
-                          <button type="button" class="btn ms-2 d-flex" style="background-color:#04B4B4; color: white; font-size: 15px;">Delete</button>
-                        </div>
-                      </div>
-                  
+              
+                  <div class="card-body" style="margin-top: -20px;">
+                    <div class="mt-2" style="display:flex;">
+                    <div style="flex:0.75">
+                      <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                      <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                      <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                      <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                      <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
                     </div>
-                    
-                </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
-                    <div class="d-flex" style="position: relative;">
-                      <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
-                      <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
-                        <h5><span class="ms-2 badge" style="background-color: #0DE7E7; color: black; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
+                      
+                      <div style="flex:0.25;" >
+                        <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
                       </div>
-    
                     </div>
-                  
+                    <h6 class="card-title">Quick Fudge Brownies</h6>
+                    <div class="row">
+                      <div class="col-6 d-flex">
+                        <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
+                      </div>
+                      <!-- <div class="col-1 d-flex">
+                        <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px;">Edit</button>
+                        <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px;">Delete</button>
+                      </div> -->
+                    </div>
+                    <diw class="row">
+                      <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 4rem;">Edit</button>
+                      <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 5rem;">Delete</button>
+
+                    </diw>
                 
-                    <div class="card-body" style="margin-top: -20px;">
-                      <div class="mt-2" style="display:flex;">
-                      <div style="flex:0.75">
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
-                      </div>
-                        
-                        <div style="flex:0.25;" >
-                          <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
-                        </div>
-                      </div>
-                      <h6 class="card-title">Quick Fudge Brownies</h6>
-                      <div class="row">
-                        <div class="col-6 d-flex">
-                          <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
-                        </div>
-                        <div class="col-1 d-flex">
-                          <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px;">Edit</button>
-                          <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px;">Delete</button>
-                        </div>
-                      </div>
+                  </div>
                   
-                    </div>
+              </div>
+             </div>
+             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
+              <div class="card" onclick="window.location.href = '#'" style="min-width: 19rem; width: 20rem; height: 20rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+                <div class="d-flex" style="position: relative;">
+                  <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
+                  <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
+                    <h5><span class="ms-2 badge d-flex" style="background-color: #0DE7E7; color: black; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
+                    <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
+                    <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
+                    <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
+                  </div>
+
+                </div>
+              
+            
+                <div class="card-body" style="margin-top: -20px;">
+                  <div class="mt-2" style="display:flex;">
+                  <div style="flex:0.75">
+                    <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                    <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                    <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
+                  </div>
                     
-                </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
-                    <div class="d-flex" style="position: relative;">
-                      <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
-                      <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
-                        <h5><span class="ms-2 badge" style="background-color: #0DE7E7; color: black; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
-                      </div>
-    
+                    <div style="flex:0.25;" >
+                      <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
                     </div>
-                  
+                  </div>
+                  <h6 class="card-title">Quick Fudge Brownies</h6>
+                  <div class="row">
+                    <div class="col-6 d-flex">
+                      <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
+                    </div>
+                    <!-- <div class="col-1 d-flex">
+                      <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px;">Edit</button>
+                      <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px;">Delete</button>
+                    </div> -->
+                  </div>
+                  <diw class="row">
+                    <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 4rem;">Edit</button>
+                    <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 5rem;">Delete</button>
+
+                  </diw>
+              
+                </div>
                 
-                    <div class="card-body" style="margin-top: -20px;">
-                      <div class="mt-2" style="display:flex;">
-                      <div style="flex:0.75;">
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
-                      </div>
-                        
-                        <div style="flex:0.25;" >
-                          <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
-                        </div>
-                      </div>
-                      <h6 class="card-title">Quick Fudge Brownies</h6>
-                      <div class="row">
-                        <div class="col-6 d-flex">
-                          <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
-                        </div>
-                        <div class="col-1 d-flex">
-                          <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px; display: flex;">Edit</button>
-                          <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; display: flex;">Delete</button>
-                        </div>
-                      </div>
-                  
-                    </div>
-                    
+            </div>
+           </div>
+           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
+            <div class="card" onclick="window.location.href = '#'" style="min-width: 19rem; width: 20rem; height: 20rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+              <div class="d-flex" style="position: relative;">
+                <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
+                <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
+                  <h5><span class="ms-2 badge d-flex" style="background-color: #0DE7E7; color: black; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
+                  <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
+                  <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
+                  <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
                 </div>
+
+              </div>
+            
+          
+              <div class="card-body" style="margin-top: -20px;">
+                <div class="mt-2" style="display:flex;">
+                <div style="flex:0.75">
+                  <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                  <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
-                    <div class="d-flex" style="position: relative;">
-                      <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
-                      <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
-                        <h5><span class="ms-2 badge" style="background-color: #0DE7E7; color: black; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
-                      </div>
-    
-                    </div>
                   
+                  <div style="flex:0.25;" >
+                    <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
+                  </div>
+                </div>
+                <h6 class="card-title">Quick Fudge Brownies</h6>
+                <div class="row">
+                  <div class="col-6 d-flex">
+                    <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
+                  </div>
+                  <!-- <div class="col-1 d-flex">
+                    <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px;">Edit</button>
+                    <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px;">Delete</button>
+                  </div> -->
+                </div>
+                <diw class="row">
+                  <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 4rem;">Edit</button>
+                  <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 5rem;">Delete</button>
+
+                </diw>
+            
+              </div>
+              
+          </div>
+         </div>
+         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
+          <div class="card" onclick="window.location.href = '#'" style="min-width: 19rem; width: 20rem; height: 20rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+            <div class="d-flex" style="position: relative;">
+              <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
+              <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
+                <h5><span class="ms-2 badge d-flex" style="background-color: #0DE7E7; color: black; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
+                <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
+                <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
+                <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
+              </div>
+
+            </div>
+          
+        
+            <div class="card-body" style="margin-top: -20px;">
+              <div class="mt-2" style="display:flex;">
+              <div style="flex:0.75">
+                <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+                <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
+              </div>
                 
-                    <div class="card-body" style="margin-top: -20px;">
-                      <div class="mt-2" style="display:flex;">
-                      <div style="flex:0.75;">
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
-                      </div>
-                        
-                        <div style="flex:0.25;" >
-                          <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
-                        </div>
-                      </div>
-                      <h6 class="card-title">Quick Fudge Brownies</h6>
-                      <div class="row">
-                        <div class="col-6 d-flex">
-                          <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
-                        </div>
-                        <div class="col-1 d-flex">
-                          <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px; display: flex;">Edit</button>
-                          <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; display: flex;">Delete</button>
-                        </div>
-                      </div>
-                  
-                    </div>
-                    
+                <div style="flex:0.25;" >
+                  <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
                 </div>
+              </div>
+              <h6 class="card-title">Quick Fudge Brownies</h6>
+              <div class="row">
+                <div class="col-6 d-flex">
+                  <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
-                    <div class="d-flex" style="position: relative;">
-                      <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
-                      <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
-                        <h5><span class="ms-2 badge" style="background-color: #0DE7E7; color: black; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
-                      </div>
+                <!-- <div class="col-1 d-flex">
+                  <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px;">Edit</button>
+                  <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px;">Delete</button>
+                </div> -->
+              </div>
+              <diw class="row">
+                <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 4rem;">Edit</button>
+                <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 5rem;">Delete</button>
+
+              </diw>
+          
+            </div>
+            
+        </div>
+       </div>
+       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
+        <div class="card" onclick="window.location.href = '#'" style="min-width: 19rem; width: 20rem; height: 20rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+          <div class="d-flex" style="position: relative;">
+            <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
+            <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
+              <h5><span class="ms-2 badge d-flex" style="background-color: #0DE7E7; color: black; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
+              <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
+              <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
+              <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
+            </div>
+
+          </div>
+        
+      
+          <div class="card-body" style="margin-top: -20px;">
+            <div class="mt-2" style="display:flex;">
+            <div style="flex:0.75">
+              <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+              <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+              <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+              <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+              <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
+            </div>
+              
+              <div style="flex:0.25;" >
+                <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
+              </div>
+            </div>
+            <h6 class="card-title">Quick Fudge Brownies</h6>
+            <div class="row">
+              <div class="col-6 d-flex">
+                <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
+              </div>
+              <!-- <div class="col-1 d-flex">
+                <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px;">Edit</button>
+                <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px;">Delete</button>
+              </div> -->
+            </div>
+            <diw class="row">
+              <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 4rem;">Edit</button>
+              <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 5rem;">Delete</button>
+
+            </diw>
+        
+          </div>
+          
+      </div>
+     </div>
+     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
+      <div class="card" onclick="window.location.href = '#'" style="min-width: 19rem; width: 20rem; height: 20rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+        <div class="d-flex" style="position: relative;">
+          <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
+          <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
+            <h5><span class="ms-2 badge d-flex" style="background-color: #0DE7E7; color: black; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
+            <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
+            <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
+            <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
+          </div>
+
+        </div>
+      
     
-                    </div>
-                  
-                
-                    <div class="card-body" style="margin-top: -20px;">
-                      <div class="mt-2" style="display:flex;">
-                      <div style="flex:0.75;">
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
-                      </div>
-                        
-                        <div style="flex:0.25;" >
-                          <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
-                        </div>
-                      </div>
-                      <h6 class="card-title">Quick Fudge Brownies</h6>
-                      <div class="row">
-                        <div class="col-6 d-flex">
-                          <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
-                        </div>
-                        <div class="col-1 d-flex">
-                          <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px; display: flex;">Edit</button>
-                          <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; display: flex;">Delete</button>
-                        </div>
-                      </div>
-                  
-                    </div>
-                    
-                </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
-                    <div class="d-flex" style="position: relative;">
-                      <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
-                      <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
-                        <h5><span class="ms-2 badge" style="background-color: #0DE7E7; color: black; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
-                      </div>
+        <div class="card-body" style="margin-top: -20px;">
+          <div class="mt-2" style="display:flex;">
+          <div style="flex:0.75">
+            <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+            <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+            <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+            <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+            <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
+          </div>
+            
+            <div style="flex:0.25;" >
+              <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
+            </div>
+          </div>
+          <h6 class="card-title">Quick Fudge Brownies</h6>
+          <div class="row">
+            <div class="col-6 d-flex">
+              <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
+            </div>
+            <!-- <div class="col-1 d-flex">
+              <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px;">Edit</button>
+              <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px;">Delete</button>
+            </div> -->
+          </div>
+          <diw class="row">
+            <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 4rem;">Edit</button>
+            <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 5rem;">Delete</button>
+
+          </diw>
+      
+        </div>
+        
+    </div>
+   </div>
+   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
+    <div class="card" onclick="window.location.href = '#'" style="min-width: 19rem; width: 20rem; height: 20rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+      <div class="d-flex" style="position: relative;">
+        <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
+        <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
+          <h5><span class="ms-2 badge d-flex" style="background-color: #0DE7E7; color: black; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
+          <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
+          <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
+          <h5><span class="ms-2 badge d-flex" style="background-color: #E47E20; color: white; display: flex; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
+        </div>
+
+      </div>
     
-                    </div>
-                  
-                
-                    <div class="card-body" style="margin-top: -20px;">
-                      <div class="mt-2" style="display:flex;">
-                      <div style="flex:0.75;">
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
-                      </div>
-                        
-                        <div style="flex:0.25;" >
-                          <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
-                        </div>
-                      </div>
-                      <h6 class="card-title">Quick Fudge Brownies</h6>
-                      <div class="row">
-                        <div class="col-6 d-flex">
-                          <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
-                        </div>
-                        <div class="col-1 d-flex">
-                          <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px; display: flex;">Edit</button>
-                          <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; display: flex;">Delete</button>
-                        </div>
-                      </div>
-                  
-                    </div>
-                    
-                </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
-                    <div class="d-flex" style="position: relative;">
-                      <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
-                      <div style="position: absolute; bottom: 0; display: flex; width: 100%; align-items: flex-end;">
-                        <h5><span class="ms-2 badge" style="background-color: #0DE7E7; color: black; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Easy</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">American</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">Snack</span></h5>
-                        <h5><span class="ms-2 badge" style="background-color: #E47E20; color: white; font-weight: 400; font-size: 0.8rem; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;">Gluten-Free</span></h5>        
-                      </div>
+  
+      <div class="card-body" style="margin-top: -20px;">
+        <div class="mt-2" style="display:flex;">
+        <div style="flex:0.75">
+          <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+          <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+          <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+          <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
+          <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
+        </div>
+          
+          <div style="flex:0.25;" >
+            <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
+          </div>
+        </div>
+        <h6 class="card-title">Quick Fudge Brownies</h6>
+        <div class="row">
+          <div class="col-6 d-flex">
+            <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
+          </div>
+          <!-- <div class="col-1 d-flex">
+            <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px;">Edit</button>
+            <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px;">Delete</button>
+          </div> -->
+        </div>
+        <diw class="row">
+          <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 4rem;">Edit</button>
+          <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; max-width: 5rem;">Delete</button>
+
+        </diw>
     
-                    </div>
-                  
-                
-                    <div class="card-body" style="margin-top: -20px;">
-                      <div class="mt-2" style="display:flex;">
-                      <div style="flex:0.75;">
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="color: #E47E20; font-size: 0.8rem;"></i>
-                        <i class="bi bi-star-fill" style="font-size: 0.8rem;"></i>
-                      </div>
-                        
-                        <div style="flex:0.25;" >
-                          <i class="bi bi-stopwatch"></i> <b style="font-size: 15px;">2.5h</b>
-                        </div>
-                      </div>
-                      <h6 class="card-title">Quick Fudge Brownies</h6>
-                      <div class="row">
-                        <div class="col-6 d-flex">
-                          <h6 class="card-subtitle mb-2 text-muted"><i>John Doe</i></h6>
-                        </div>
-                        <div class="col-1 d-flex">
-                          <button type="button" class="btn" style="background-color:#04B4B4; color: white; font-size: 15px; display: flex;">Edit</button>
-                          <button type="button" class="btn ms-2" style="background-color:#04B4B4; color: white; font-size: 15px; display: flex;">Delete</button>
-                        </div>
-                      </div>
-                  
-                    </div>
-                    
-                </div>
-                </div>
+      </div>
+      
+  </div>
+ </div>
               </div>
             </div>
             
@@ -439,7 +479,7 @@
             <div class="tab-pane" id="fav">
               <div class="container">
                 <div class="row">
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2">
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
                     <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
                       <div class="d-flex" style="position: relative;">
                         <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
@@ -481,7 +521,7 @@
                       
                   </div>
                  </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2">
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
                     <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
                       <div class="d-flex" style="position: relative;">
                         <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
@@ -523,7 +563,7 @@
                       
                   </div>
                   </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2">
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
                     <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
                       <div class="d-flex" style="position: relative;">
                         <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
@@ -565,7 +605,7 @@
                       
                   </div>
                   </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2">
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 mt-3">
                     <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
                       <div class="d-flex" style="position: relative;">
                         <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
@@ -743,7 +783,7 @@
                     
                 </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-flex mb-2 ">
                   <div class="card" onclick="window.location.href = '#'" style="width: 20rem; height: 19rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
                     <div class="d-flex" style="position: relative;">
                       <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 12rem; object-fit: cover; position: relative;">
