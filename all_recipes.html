@@ -30,50 +30,56 @@
   <body style="background-color: #EFEEEE;">
 
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-white">
       <div class="container">
-        <a href="home.html" class="navbar-brand" >
-          <img src="Assests/easy-chef-logo.jpg" alt="logo" style="width:70px;">
-        </a>
+          
+          <!-- logo with onclick action to home -->
+          <a href="../home.html" class="navbar-brand" >
+              <img src="https://images-ext-1.discordapp.net/external/j6DPYsmN_CyPzrY6Ng1letuTqiIsya26WWjRCPUip98/https/www.linkpicture.com/q/EasyChef-Logo-original.png" alt="logo" style="width:70px;">
+            </a>  
 
-        <div class="collapse navbar-collapse">
-          <!-- The Following Code for the <form> tag was taken from: 
-             https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_form&stacked=h 
-             and slightly modifed to create a search bar for the navigation bar. 
-            -->
-          <form class="navbar-form">
-            <div class="form-group">
-              <input style="width: 30rem; margin-left: 1rem;" type="text" class="form-control" placeholder="Search for recipes ...">
-            </div>
-          </form>
+        <!-- side bar after collapse     -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #E47E20; color: #FFFFFF;">
+          <span class="navbar-toggler-icon"> </span>
+        </button>
 
-            <ul class="navbar-nav  ms-auto">
-              <li class="nav-item">
-                  <a class="nav-link btn" href="my_recipes.html" style="background-color: #E47E20; color: white; margin-left: 1rem;" >My Recipes</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link btn" href="create_recipe.html" style="background-color: #E47E20; color: white; margin-left: 1rem;"> Create New Recipe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn" href="shopping_list.html" style="background-color: #E47E20; color: white; margin-left: 1rem;"> My Shopping List</a>
-              </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
 
-            <!-- The following code to create a dropdown menu was taken as a starting point from: 
-              https://www.w3schools.com/bootstrap5/bootstrap_dropdowns.php
-              and slighttly modified for our needs. 
-            -->
-            <div class="dropdown" style="margin-left: 5rem;">
-              <button class="btn " data-bs-toggle="dropdown" style="background-color: #E47E20; color: white; margin-left: 1rem;">
-                  <i class="bi bi-list"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">View Profile</a></li>
-                <li><a class="dropdown-item" href="edit_profile.html">Edit Profile</a></li>
-                <li><a class="dropdown-item" href="#">Log Out</a></li>
+            <li class="nav-item">
+            <form class="d-flex " action="../search_page.html" style="margin-top: 1.15rem; margin-left: 1.15rem; ">
+                <input class="form-control me-2" type="search" placeholder="Search for recipes ..." aria-label="Search">
+                <!-- icon reference: https://icons.getbootstrap.com/icons/search/ -->
+                <button class="btn" type="submit" style="background-color: #E47E20; color: white; margin-right: 2rem;"><i class="bi bi-search"></i></button>
+              </form>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link btn" href="../all_recipes.html" style="background-color: #E47E20; color: white; margin: 1rem;"> All Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn" href="../my_recipes.html" style="background-color: #E47E20; color: white; margin: 1rem;" >My Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn" href="../create_recipe.html" style="background-color: #E47E20; color: white; margin: 1rem;"> Create New Recipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn" href="../shopping_list.html" style="background-color: #E47E20; color: white; margin: 1rem;"> My Shopping List</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link btn dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #E47E20; color: #FFFFFF; margin: 1rem; text-align: center;">
+                  <!-- icon reference: https://icons.getbootstrap.com/icons/list/ -->
+                  <span><i class="bi bi-list"></i></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="text-align: center;"> 
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#userInfoModal">View Profile</a></li>
+                <li><a class="dropdown-item" href="../edit_profile.html">Edit Profile</a></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
               </ul>
-            </div>
+            </li>
+          </ul>
+          
         </div>
+
       </div>
     </nav>
 
@@ -131,7 +137,7 @@
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li><a class="dropdown-item" href="#">Ratings</a></li>
                     <li><a class="dropdown-item" href="#">Likes</a></li>
-                    <li><a class="dropdown-item" href="#">Favourties</a></li>
+                    <li><a class="dropdown-item" href="#">Favourites</a></li>
                   </ul>
                 </div>
 
@@ -155,7 +161,7 @@
 
                 <!-- row 1 col 1 -->
                 <div class="col d-flex justify-content-center" style="margin-bottom: 2rem; margin-top: 2rem;">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                  <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                     <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                     <div style="position:absolute;top:60%;display:flex; width:100%">
                       <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -188,7 +194,7 @@
                   </div>
 
                   <div class="rounded" style="width: 15rem; height: 15rem; background-color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                    <p style="padding: 0.25rem;">Quick and eay to make, good late night snack.</p>
+                    <p style="padding: 0.25rem;">Quick and easy to make, good late night snack.</p>
 
                   </div>
                 </div>
@@ -196,7 +202,7 @@
 
                 <!-- row 1 col 2 -->
                 <div class="col d-flex justify-content-center" style="margin-bottom: 2rem; margin-top: 2rem;">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                  <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                     <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                     <div style="position:absolute;top:60%;display:flex; width:100%">
                       <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -228,7 +234,7 @@
                     </div>
                   </div>
                   <div class="rounded" style="width: 15rem; height: 15rem; background-color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                    <p style="padding: 0.25rem;">Quick and eay to make, good late night snack.</p>
+                    <p style="padding: 0.25rem;">Quick and easy to make, good late night snack.</p>
 
                   </div>
                 </div>
@@ -241,7 +247,7 @@
 
                 <!-- row 2 col 1 -->
                 <div class="col d-flex justify-content-center" style="margin-bottom: 2rem; margin-top: 2rem;">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                  <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                     <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                     <div style="position:absolute;top:60%;display:flex; width:100%">
                       <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -274,7 +280,7 @@
                   </div>
 
                   <div class="rounded" style="width: 15rem; height: 15rem; background-color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                    <p style="padding: 0.25rem;">Quick and eay to make, good late night snack.</p>
+                    <p style="padding: 0.25rem;">Quick and easy to make, good late night snack.</p>
 
                   </div>
                 </div>
@@ -282,7 +288,7 @@
   
                 <!-- row 2 col 2 -->
                 <div class="col d-flex justify-content-center" style="margin-bottom: 2rem; margin-top: 2rem;">
-                  <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                  <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                     <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                     <div style="position:absolute;top:60%;display:flex; width:100%">
                       <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -314,7 +320,7 @@
                     </div>
                   </div>
                   <div class="rounded" style="width: 15rem; height: 15rem; background-color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                    <p style="padding: 0.25rem;">Quick and eay to make, good late night snack.</p>
+                    <p style="padding: 0.25rem;">Quick and easy to make, good late night snack.</p>
 
                   </div>
                 </div>
@@ -328,7 +334,7 @@
 
               <!-- row 3 col 1 -->
               <div class="col d-flex justify-content-center" style="margin-bottom: 2rem; margin-top: 2rem;">
-                <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                   <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                   <div style="position:absolute;top:60%;display:flex; width:100%">
                     <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -361,14 +367,14 @@
                 </div>
 
                 <div class="rounded" style="width: 15rem; height: 15rem; background-color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                  <p style="padding: 0.25rem;">Quick and eay to make, good late night snack.</p>
+                  <p style="padding: 0.25rem;">Quick and easy to make, good late night snack.</p>
                 </div>
               </div>
 
 
               <!-- row 3 col 2 -->
               <div class="col d-flex justify-content-center" style="margin-bottom: 2rem; margin-top: 2rem;">
-                <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                   <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                   <div style="position:absolute;top:60%;display:flex; width:100%">
                     <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -400,7 +406,7 @@
                   </div>
                 </div>
                 <div class="rounded" style="width: 15rem; height: 15rem; background-color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                  <p style="padding: 0.25rem;">Quick and eay to make, good late night snack.</p>
+                  <p style="padding: 0.25rem;">Quick and easy to make, good late night snack.</p>
                 </div>
               </div>
            
@@ -424,7 +430,7 @@
 
               <!-- row 1 col 1 -->
               <div class="col d-flex justify-content-center" style="margin-bottom: 2rem;">
-                <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                   <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                   <div style="position:absolute;top:60%;display:flex; width:100%">
                     <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -460,7 +466,7 @@
 
               <!-- row 1 col 2 -->
               <div class="col d-flex justify-content-center" style="margin-bottom: 2rem;">
-                <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                   <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                   <div style="position:absolute;top:60%;display:flex; width:100%">
                     <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -496,7 +502,7 @@
 
               <!-- row 1 col 3 -->
               <div class="col d-flex justify-content-center" style="margin-bottom: 2rem;">
-                <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                   <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                   <div style="position:absolute;top:60%;display:flex; width:100%">
                     <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -532,7 +538,7 @@
               
               <!-- row 1 col 4 -->
               <div class="col d-flex justify-content-center" style="margin-bottom: 2rem;">
-                <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                   <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                   <div style="position:absolute;top:60%;display:flex; width:100%">
                     <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -574,7 +580,7 @@
 
               <!-- row 2 col 1 -->
               <div class="col d-flex justify-content-center" style="margin-bottom: 2rem;">
-                <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                   <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                   <div style="position:absolute;top:60%;display:flex; width:100%">
                     <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -611,7 +617,7 @@
 
               <!-- row 2 col 2 -->
               <div class="col d-flex justify-content-center"style="margin-bottom: 2rem;">
-                <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                   <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                   <div style="position:absolute;top:60%;display:flex; width:100%">
                     <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -647,7 +653,7 @@
 
               <!-- row 2 col 3 -->
               <div class="col d-flex justify-content-center" style="margin-bottom: 2rem;">
-                <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                   <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                   <div style="position:absolute;top:60%;display:flex; width:100%">
                     <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -683,7 +689,7 @@
               
               <!-- row 2 col 4 -->
               <div class="col d-flex justify-content-center" style="margin-bottom: 2rem;">
-                <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                   <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                   <div style="position:absolute;top:60%;display:flex; width:100%">
                     <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -725,7 +731,7 @@
 
             <!-- row 3 col 1 -->
             <div class="col d-flex justify-content-center" style="margin-bottom: 2rem;">
-              <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                 <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                 <div style="position:absolute;top:60%;display:flex; width:100%">
                   <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -762,7 +768,7 @@
 
             <!-- row 3 col 2 -->
             <div class="col d-flex justify-content-center"style="margin-bottom: 2rem;">
-              <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                 <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                 <div style="position:absolute;top:60%;display:flex; width:100%">
                   <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -798,7 +804,7 @@
 
             <!-- row 3 col 3 -->
             <div class="col d-flex justify-content-center" style="margin-bottom: 2rem;">
-              <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                 <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                 <div style="position:absolute;top:60%;display:flex; width:100%">
                   <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
@@ -834,7 +840,7 @@
             
             <!-- row 3 col 4 -->
             <div class="col d-flex justify-content-center" style="margin-bottom: 2rem;">
-              <div class="card" onclick="window.location.href = '#'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <div class="card" onclick="window.location.href = 'recipe_details/recipe_detail2.html'" style="width: 15rem; height: 15rem; cursor:pointer; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                 <img class="card-img-top img-fluid" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." style="max-height: 10rem; object-fit: cover; position: relative;">
                 <div style="position:absolute;top:60%;display:flex; width:100%">
                   <h5 title="Easy" style="width:100%; border:1px solid Black; border-radius:10px; background-color:#0DE7E7; text-align:center; flex:0.25; font-size:0.8em"> Easy </h5>
