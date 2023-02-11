@@ -124,95 +124,97 @@
     </div>
 
 
-    <div class="bg-image" style="background-image: url('https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size:100%; height:60vh; background-repeat:no-repeat; filter:blur(4px) brightness(0.75); position:relative; margin-bottom:50px;"></div>
-    <form action="search_page.html">
-      <h1 style="text-align: center; padding:50px; position:absolute; top:30%; left:50%; transform:translate(-50%, -50%); color:white; font-size:3.5vw; width:100%;">Search for Recipes</h1>
-      
-      <div class="searchBar" style="display:flex; position:absolute; top:40%; left:50%; transform:translate(-50%, -50%); font-size:1.5em; z-index:2;">
-        <input type="text" id="search" name="search" style="width:40vw; font-size:1.25vw; height:2.5vw"></textarea>
-        <input type="submit" value="Search" style="width:10vw; font-size:1.25vw; height:2.5vw; color:white; background-color:#04B4B4; border-radius:5px; border: 0px;">
-      </div>
-      
-      <div style="display:flex; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:1;">
-
-        <div class="dropdown">
-          <button type="button" id="searchCategoryDropdown" class="btn btn-primary dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
-            Search By...
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="searchCategoryDropdown">
-            <li><a class="dropdown-item">Recipe</a></li>
-            <li><a class="dropdown-item">Chef</a></li>
-            <li><a class="dropdown-item">Ingredients</a></li>
-          </ul>
+    <div style="position:relative;">
+      <div class="bg-image" style="background-image: url('https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size:100%; height:60vh; background-repeat:no-repeat; filter:blur(4px) brightness(0.75); margin-bottom:50px;"></div>
+      <form>
+        <h1 style="text-align: center; padding:50px; position:absolute; top:30%; left:50%; transform:translate(-50%, -50%); color:white; font-size:3.5vw; width:100%;">Search for Recipes</h1>
+        
+        <div class="searchBar" style="display:flex; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:1.5em;">
+          <input type="text" id="search" name="search" style="width:40vw; font-size:1.25vw; height:2.5vw"></textarea>
+          <input type="submit" value="Search" style="width:10vw; font-size:1.25vw; height:2.5vw; color:white; background-color:#04B4B4; border-radius:5px; border: 0px">
         </div>
+        
+        <div style="display:flex; position:absolute; top:70%; left:50%; transform:translate(-50%, -50%);">
 
-        <div class="dropdown">
-          <button type="button" id="cookingTimeDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
-            Cooking Time
-          </button>
-          <div class="dropdown-menu" aria-labelledby="cookingTimeDropdown" style="overflow-y:scroll; max-height:10em;">
-            <a class="dropdown-item">1m - 20m</a>
-            <a class="dropdown-item">10m - 30m</a>
-            <a class="dropdown-item">30m - 1hr</a>
-            <a class="dropdown-item">1hr+</a>
+          <div class="dropdown">
+            <button type="button" id="searchCategoryDropdown" class="btn btn-primary dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
+              Search By...
+            </bTimeutton>
+            <ul class="dropdown-menu" aria-labelledby="searchCategoryDropdown">
+              <li><a class="dropdown-item">Recipe</a></li>
+              <li><a class="dropdown-item">Chef</a></li>
+              <li><a class="dropdown-item">Ingredients</a></li>
+            </ul>
           </div>
-        </div>
 
-        <div class="dropdown">
-          <button type="button" id="cuisineDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
-            Cuisine
-          </button>
-          <div class="dropdown-menu" aria-labelledby="cuisineDropdown" style="overflow-y:scroll; max-height:10em;">
-            <a class="dropdown-item">American</a>
-            <a class="dropdown-item">Brazilian</a>
-            <a class="dropdown-item">Chinese</a>
-            <a class="dropdown-item">English</a>
-            <a class="dropdown-item">French</a>
-            <a class="dropdown-item">German</a>
-            <a class="dropdown-item">Greek</a>
-            <a class="dropdown-item">Hungarian</a>
-            <a class="dropdown-item">Indian</a>
-            <a class="dropdown-item">Italian</a>
-            <a class="dropdown-item">Japanese</a>
-            <a class="dropdown-item">Mediterranean</a>
-            <a class="dropdown-item">Middle-Eastern</a>
-            <a class="dropdown-item">Mexican</a>
-            <a class="dropdown-item">South-Asian</a>
-            <a class="dropdown-item">Scandanavian</a>
-            <a class="dropdown-item">Spanish</a>
+          <div class="dropdown">
+            <button type="button" id="cookingTimeDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
+              Cooking Time
+            </button>
+            <div class="dropdown-menu" aria-labelledby="cookingTimeDropdown" style="overflow-y:scroll; max-height:10em;">
+              <a class="dropdown-item">1m - 20m</a>
+              <a class="dropdown-item">10m - 30m</a>
+              <a class="dropdown-item">30m - 1hr</a>
+              <a class="dropdown-item">1hr+</a>
+            </div>
           </div>
-        </div>
 
-        <div class="dropdown">
-          <button type="button" id="mealDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
-            Meal
-          </button>
-          <div class="dropdown-menu" aria-labelledby="mealDropdown" style="overflow-y:scroll; max-height:10em;">
-            <a class="dropdown-item">Breakfast</a>
-            <a class="dropdown-item">Lunch</a>
-            <a class="dropdown-item">Dinner</a>
-            <a class="dropdown-item">Desserts</a>
-            <a class="dropdown-item">Snacks</a>
-            <a class="dropdown-item">Other</a>
+          <div class="dropdown">
+            <button type="button" id="cuisineDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
+              Cuisine
+            </button>
+            <div class="dropdown-menu" aria-labelledby="cuisineDropdown" style="overflow-y:scroll; max-height:10em;">
+              <a class="dropdown-item">American</a>
+              <a class="dropdown-item">Brazilian</a>
+              <a class="dropdown-item">Chinese</a>
+              <a class="dropdown-item">English</a>
+              <a class="dropdown-item">French</a>
+              <a class="dropdown-item">German</a>
+              <a class="dropdown-item">Greek</a>
+              <a class="dropdown-item">Hungarian</a>
+              <a class="dropdown-item">Indian</a>
+              <a class="dropdown-item">Italian</a>
+              <a class="dropdown-item">Japanese</a>
+              <a class="dropdown-item">Mediterranean</a>
+              <a class="dropdown-item">Middle-Eastern</a>
+              <a class="dropdown-item">Mexican</a>
+              <a class="dropdown-item">South-Asian</a>
+              <a class="dropdown-item">Scandanavian</a>
+              <a class="dropdown-item">Spanish</a>
+            </div>
           </div>
-        </div>
 
-        <div class="dropdown">
-          <button type="button" id="dietDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
-            Diet
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dietDropdown" style="overflow-y:scroll; max-height:10em;">
-            <a class="dropdown-item">Vegan</a>
-            <a class="dropdown-item">Vegetarian</a>
-            <a class="dropdown-item">Gluten-Free</a>
-            <a class="dropdown-item">Halal</a>
-            <a class="dropdown-item">Kosher</a>
+          <div class="dropdown">
+            <button type="button" id="mealDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
+              Meal
+            </button>
+            <div class="dropdown-menu" aria-labelledby="mealDropdown" style="overflow-y:scroll; max-height:10em;">
+              <a class="dropdown-item">Breakfast</a>
+              <a class="dropdown-item">Lunch</a>
+              <a class="dropdown-item">Dinner</a>
+              <a class="dropdown-item">Desserts</a>
+              <a class="dropdown-item">Snacks</a>
+              <a class="dropdown-item">Other</a>
+            </div>
           </div>
+
+          <div class="dropdown">
+            <button type="button" id="dietDropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:1.5em; margin-right:1.5em; width:10vw; font-size:1vw; background-color:#04B4B4; border:0px;">
+              Diet
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dietDropdown" style="overflow-y:scroll; max-height:10em;">
+              <a class="dropdown-item">Vegan</a>
+              <a class="dropdown-item">Vegetarian</a>
+              <a class="dropdown-item">Gluten-Free</a>
+              <a class="dropdown-item">Halal</a>
+              <a class="dropdown-item">Kosher</a>
+            </div>
+          </div>
+
         </div>
 
-      </div>
-
-    </form>
+      </form>
+    </div>
 
     <div class="container-fluid" style="min-width:30vw;">
 
