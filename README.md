@@ -17,6 +17,6 @@ In this initial phase, our task was to create a static demo of the Easy Chef web
 Please note that this phase focuses on the static representation of the website's design and layout.
 
 ## Project Phases 
-Phase 1: Static demo with HTML and CSS (Current Phase).
-Phase 2: Implementation of backend server using DJANGO. 
+Phase 1: Static demo with HTML and CSS (Current Phase).  
+Phase 2: Implementation of backend server using DJANGO.   
 Phase 3: Fully operational website featuring a React frontend server linked to the Django backend.
