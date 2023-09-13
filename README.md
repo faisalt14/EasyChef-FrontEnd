@@ -1,23 +1,22 @@
-# Phase 1 deliverables
+# Easy Chef - Phase 1
+This repository represents the first phase of the term project developed during my web development course. The ultimate objective of the course was to create a fully functional recipe website called "Easy Chef." Our team, consisting of three members, collaborated to complete this project.
 
-For phase 1, you are to implement most of the HTML/CSS of your project. Your deliverable for this website is a static demo of Easy Chef. Your codes should only consist of HTML and CSS files, without any backend/frontend servers. You should not implement any JS logic at this phase, except for JS files that are imported from external sources. Also, note that you will need to refactor your files when you migrate to React at phase 3. You can find an example of static demos here. A static demo showcases the design of the pages by filling them up with some random test data. Forms and buttons do not send any request, but the links point to various pages included in the application.
+## Project Overview
+In this initial phase, our task was to create a static demo of the Easy Chef website using HTML and CSS. It's important to note that this phase does not involve the implementation of frontend/backend servers or JavaScript logic. Nevertheless, the static demo includes several noteworthy features:
 
-Using a CSS framework (e.g., Bootstrap, Semantic, Bulma) is strongly recommended as plain CSS will take enormous hours to implement and debug. You can also use online templates to consolidate your design. However, since it is a static website at this stage, you cannot use any frontend framework, including any React-dependent CSS framework.
+**Responsive Design**: The website is designed to adapt seamlessly to various screen sizes thanks to a collapsible navigation bar and Bootstrap's grid layout feature.
 
-The detailed structure or the exact number of pages is up to you. However, your website should be navigable. That is, different pages should be connected to each other through clickable links and buttons. The general structure follows:
+**Navigation**: Users can easily navigate the website, which includes multiple pages and a user-friendly navigation bar.
 
-- All pages should have a navbar that includes relevant information such as links to home, my recipes, a button for creating new recipes, and a - dropdown that shows the user's profile and includes a link to the shopping list, edit profile and logout.
-- The detailed content of the home page is up to you. Generally, a search bar and filter options as well as a list of popular recipes is expected to be on that page .
-- Recipes displayed in lists (e.g., search results) must be displayed in cards. Cards must contain useful information about the recipe, such as name, at least one photo, and cooking time. They are clickable and point to the recipe details page.
-- You should also provide the static version of the recipe details page, as well as the recipe creation form. The recipe page should be comprehensive and include whatever is relevant data about that recipe. The detailed design of that page (e.g., using tabs) is up to you. You can assume that we only enter one step for creating recipes, given that supporting more steps in a beautiful way might need some JS logic.
-- You should include an example my recipes page, as well as a shopping list page consisting of multiple recipes.
-- You should include an example edit profile form as well. You do not need to provide one for login/signup assuming that those forms will be very similar. 
+**Recipe Cards**: Each recipe in a list is presented as a clickable card, providing a convenient way to access detailed recipe information.
 
+**Homepage Carousels**: The homepage showcases various carousels that categorize recipes, making it easy for users to explore recipes by meal type (e.g., breakfast, lunch, dinner).
 
-Note 1: UI and UX will be an important part of your grades (both at P1 and P3, independently). Even though you have a decent flexibility with your design, you should come up with a demo that has a very good UI and UX. You should refer to common sense when it comes to UI and UX and think about the websites you visit everyday, what are examples of good UI/UX, and what are not. Note that at P3, you will get to modify your UI and UX, but it will not overwrite your P1 grades.
+**All Recipes Page**: This page offers a dynamic experience with toggleable tabs, allowing users to switch between viewing the most popular recipes and a comprehensive list of recipes without being redirected.
 
-Note 2: Your website will be tested only on desktop monitors, but the actual screen size could vary. So it is your responsibility to make sure that your application renders well on various desktop screen sizes.
+Please note that this phase focuses on the static representation of the website's design and layout.
 
-Note 3: Note that the above list is just the general structure, and they are not the full set of requirements for phase 1. You should always think that your website is eventually going to include all the user stories described above. So it will be assessed that way.
-
-Note 4: as potentially ambiguous as the handout gets, you can ask your questions on Piazza or discuss them with TAs at mentor sessions. Phase 1 will be graded leniently, and you will be informed about what you did wrong or was missing.
+## Project Phases 
+Phase 1: Static demo with HTML and CSS (Current Phase).
+Phase 2: Implementation of backend server using DJANGO. 
+Phase 3: Fully operational website featuring a React frontend server linked to the Django backend.
